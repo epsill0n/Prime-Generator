@@ -16,10 +16,11 @@ namespace PG {
         int c_id = 1, c_num = 3;
         __primes_arr[0]=2;
         bool isPrime;
-        for (; c_id <= n; ++c_num) {
+        for (; c_id <= n; c_num+=2) {
             isPrime = true;
             for (int p_iter = 0; __primes_arr[p_iter] * __primes_arr[p_iter] <= c_num; ++p_iter) {
                 isPrime = isPrime && (c_num % __primes_arr[p_iter]);
+                if (!isPrime) break;
             }
 
             if (isPrime) __primes_arr[c_id++] = c_num;
