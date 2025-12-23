@@ -5,21 +5,15 @@
 
 #pragma once
 
-#include <gmpxx.h>
-#include <map>
-
-#define ll long long
-#define ull unsigned ll
-
 namespace PG {
-    inline void get_primes(ull n, ull*& primes, bool until_n = false) {
-        ull size = (until_n)*(n) + (!until_n)*(1);
+    inline void get_primes(int n, int*& primes, bool until_n = false) {
+        int size = (until_n)*(n) + (!until_n)*(1);
 
-        primes = new ull[size];
-        ull* __primes = ((until_n) ? nullptr : (new ull[n]));
-        ull* __primes_arr = ((until_n) ? primes : __primes);
+        primes = new int[size];
+        int* __primes = ((until_n) ? nullptr : (new int[n]));
+        int* __primes_arr = ((until_n) ? primes : __primes);
 
-        ull c_id = 1, c_num = 3;
+        int c_id = 1, c_num = 3;
         __primes_arr[0]=2;
         bool isPrime;
         for (; c_id <= n; c_num+=2) {

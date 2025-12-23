@@ -16,21 +16,21 @@ Let
 
 $$
 \large \displaystyle
-\mathcal{P} = \left\{ p_1, p_2, \cdots, p_k \right\}
+\mathcal{P} = \{p_1, p_2, \cdots, p_k\}
 $$
 
 be the set of prime factors of $\large \displaystyle n$, and let
 
 $$
 \large \displaystyle
-\mathcal{A} = \left\{ \alpha_1, \alpha_2, \cdots, \alpha_k \right\}
+\mathcal{A} = \{\alpha_1, \alpha_2, \cdots, \alpha_k\}
 $$
 
 be the set of the degrees of each of the primes in the prime factorization of $\large \displaystyle n$, all so that
 
 $$
 \large \displaystyle
-\left(\forall i \in \{1,2,\cdots,k\}\right) \land \left(\forall j \in \{1,2,\cdots,k\}\right) \land \left(i < j\right)
+\forall i \in \{1,2,\cdots,k\} \land \forall j \in \{1,2,\cdots,k\} \land i < j
 $$
 
 $$
@@ -40,7 +40,7 @@ $$
 
 <br>
 
-Of course, every prime factor of $\large \displaystyle n$ is less than $\large \displaystyle n$ $\left(\text{except the case when} \ {\large \displaystyle n} \ \text{is prime, hence only one prime factor} \ p \ \text{with} \ {\large \displaystyle \alpha=1 \large \displaystyle \iff\large \displaystyle n = p}\right)$:
+Of course, every prime factor of $\large \displaystyle n$ is less than $\large \displaystyle n$ (except the case when $\large \displaystyle n$ is prime, hence only one prime factor $p$ with $\large \displaystyle \alpha=1$ $\large \displaystyle \iff$ $\large \displaystyle n = p$):
 
 $$
 \large \displaystyle
@@ -54,7 +54,7 @@ $$
 
 $$
 \large \displaystyle
-\left(n > p_k\right) \land \cdots \land \left(n > p_2\right) \land \left(n > p_1\right)
+n > p_k \land \cdots \land n > p_2 \land n > p_1
 $$
 
 <br>
@@ -63,7 +63,7 @@ If we have a set $\large \displaystyle \Omega$ of all the prime numbers less tha
 
 $$
 \large \displaystyle
-\Omega_z = \left\{p_{z_1}, p_{z_2}, \cdots, p_{z_m} \mid p_{z_j} < z \right\}
+\Omega_z = \{p_{z_1}, p_{z_2}, \cdots, p_{z_m} \mid p_{z_j} < z \}
 $$
 
 we can get the the set $\large \displaystyle \Omega_{z+1}$ by:
@@ -102,7 +102,7 @@ If $\large \displaystyle z$ is prime, we add it to the set; if it is composite w
 Prime-Generator/
 ├── pg.hpp
 ├── main.cpp
-├── main.exe                 (needs to be built)
+├── main.exe                 (need to be built)
 │
 ├── README.md
 └── LICENSE.txt

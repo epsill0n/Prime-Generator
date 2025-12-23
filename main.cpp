@@ -23,10 +23,10 @@ int main (int argc, char** argv) {
         return -1;
     }
 
-    ull n = std::atoi(argv[1]);
+    int n = std::atoi(argv[1]);
     bool until_n = bool(std::atoi(argv[2]));
 
-    ull* primes;
+    int* primes;
 
     std::chrono::system_clock::time_point begin, end;
     std::chrono::duration<double, std::milli> elapsed;
@@ -35,10 +35,10 @@ int main (int argc, char** argv) {
     PG::get_primes(n, primes, until_n);
     end = std::chrono::high_resolution_clock::now();
 
-    ull range = ((until_n) ? (n) : (1));
+    int range = ((until_n) ? (n) : (1));
     // std::cout << "range = " << range << std::endl;
     
-    for (ull i = 0; i < range; ++i) {
+    for (int i = 0; i < range; ++i) {
         // std::cout << "i = " << i << std::endl;
         std::cout << primes[i] << " ";
     } std::cout << "\n";
